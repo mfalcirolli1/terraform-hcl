@@ -1,0 +1,26 @@
+aws confire (para incluir access key do usuário)
+
+Baixar o terraform no site oficial (terraform.io)
+Incluir o path da pasta com o arquivo .exe na váriavel de ambiente Path do usuário: C:\Windows\System32\terraform
+
+terraform -v -> Na pasta que contem o .exe
+terraform --help
+terraform --version
+
+terraform init (Iniciar config terraform para o provider especificado)
+
+terraform validate (na pasta com os arquivos, para validar o script terraform)
+
+terraform fmt (formata a identação do código)
+
+terraform plan -out="tfplan.out"    (planejar terraform e mostrar alterações)
+
+terraform plan -var="aws_region=sa-east-1"
+
+terraform apply
+
+terraform apply -auto-approve
+
+terraform destroy  (deletar recursos)
+
+terraform.tfvars --> Específico para definir valor de variáveis
